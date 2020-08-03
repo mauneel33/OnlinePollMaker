@@ -1,22 +1,155 @@
-header {
-    text-align: center;
-}
-nav {
-    text-align: center;
-}
-h3 {
-    text-align: center;
-}
-p {
-    text-align: center;
-}
-div {
-    text-align: center;
-}
 footer{
     text-align: center;
 }
-table.center {
-  margin-left: auto;
-  margin-right: auto;
+div.login-box{
+    display: block;
+    padding-top: 60px;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-left: 700px;
+    margin-bottom: 20px;
+    border-style : solid;
+    border-color: blanchedalmond;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: whitesmoke;
+}
+div.login-title{
+    display: block;
+    float: left;
+    margin-top: 120px;
+}
+div.buttons{
+    padding-left: 125px;
+}
+label.title{
+    padding : 90px;
+    font-size: 18mm;
+    font-variant: small-caps;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+label.subtitle{
+    padding-left: 200px;
+    font-size: 7mm;
+    font-style: italic;
+    color: white;
+}
+header.login{
+    width: 100%;
+    height: 70px;
+    border-style : solid;
+    padding-bottom: 10px;
+}
+footer.login{
+    width: 100%;
+    height: 60px;
+    max-width: 100%;
+    max-height: 600px;
+    border-style : solid;
+    background-color: #c5d9b4;
+}
+body.login{
+    background-color:#4c6b32;
+}
+input.textbox{
+    padding-left: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    border-color: rgba(48, 46, 41,0.3);
+    border-style: solid;
+    font-size: 5mm;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+}
+input:focus{
+    border-color: green;
+    border-radius: 5px ;
+}
+input.submit{
+    width: 120px;
+    height: 50px;
+    font-size: 4mm;
+    background-color: yellowgreen;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255,0.8);
+}
+input.submit:hover{
+    background-color: #4c6b32;
+    color: whitesmoke;
+}
+a.login{
+    padding-left: 150px;
+}
+label.text{
+    font-size: 5mm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input.signup{
+    width: 100px;
+    height: 50px;
+    font-size: 4mm;
+    background-color: yellowgreen;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255,0.8);   
+}
+input.signup:hover{
+    background-color: #4c6b32;
+    color: whitesmoke;
+}
+footer.home{
+    width: 100%;
+    height: 60px;
+    max-width: 100%;
+    max-height: 600px;
+    background-color: #e8e7e3;
+}
+header.home{
+    width: 100%;
+    height: 25px;
+    max-width: 100%;
+    background-color: #4c6b32;
+    padding: 20px;
+}
+a.linkButton{
+    padding: 5px;
+    color: black;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    width: 60px;
+    height: 30px;
+    background-color: #e8e7e3;
+    text-decoration: none;
+}
+a.linkButton:hover{
+    background-color: yellowgreen;
+}
+a.linkButton:active{
+    color: aliceblue;
+}
+label.head-title{
+    font-size: 7mm;
+    color:whitesmoke; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav.head-button{
+    float:right;
+    padding-right: 20px;
+}
+textarea.addpoll{
+    border-color: rgba(0,0, 0, 0.3);
+    padding-left: 5px;
+    border-radius: 5px;
+}
+textarea.addpoll:focus{
+    border-color:green;
+    border-radius: 5px;
+}
+textarea.addpoll:hover{
+    border-color:green;
+    border-radius: 5px;
 }

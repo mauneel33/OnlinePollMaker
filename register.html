@@ -2,49 +2,49 @@
 
 <html>
     <head>
-        <title>Register Page-Poll Maker</title>
+        <title>Sign Up-Poll Maker</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <header>
-            <h2>Register</h2>
-        </header>
-        <nav>
-            <a href="https://mauneel33.github.io/OnlinePollMaker/index.html">Home</a>
-        </nav>
-        <br/>
-        <br/>
+    <body class="login">
         <div>
-            <form method="POST" action="#">
-                <table class="center" cellspacing="10">
-                <tr align="center">
-                    <td> First Name :</td>
-                    <td><input type="text" name="fname" required=""></td>
-                </tr>
-                <tr align="center">
-                    <td> Last name :</td>
-                    <td><input type="text" name="lname" required=""></td>
-                </tr>
-                <tr align="center">
-                    <td> Email-ID : </td>
-                    <td><input type="email" name="email" required=""></td>
-                </tr>
-                <tr align="center">
-                    <td> Password : </td>
-                    <td><input type="password" name="paswd" required=""></td>
-                </tr>
-                <tr align="center">
-                    <td> Confirm Password</td>
-                    <td><input type="password" name="paswd1" required=""></td>
-                </tr>
-                <tr align="center">
-                    <td><input type="submit" value="Register"></td>
-                    <td><input type="reset" value="Reset"></td>
-                </tr>
-            </table>
-            </form>
+            <div class="login-title">
+                <label class="title">Poll Maker</label><br/><br/>
+                <label class="subtitle">Build your poll now!</label>
+            </div>
+            <div class="login-box" style="width: 450px; height: 440px;padding-top: 40px; padding-left: 30px;">
+                <form>
+                    <table>
+                        <tr>
+                            <td align="left"><label class="text" style="font-size: 4mm;">First Name:</label></label></td>
+                            <td align="left" style="padding-left: 60px;"><label class="text" style="font-size: 4mm;">Last Name:</label></td>
+                        </tr>
+                        <tr>
+                            <td><input class="textbox" style="width:150px;height: 30px;" type="text" name="fname" required/><br/><br/></td>
+                            <td style="padding-left: 60px;"><input class="textbox" style="width:150px;height: 30px;" type="text" name="lname" required/><br/><br/></td>
+                        </tr>
+                    </table>
+                    <label class="text" style="font-size: 4mm;">Email-ID:</label><br/><br/>
+                    <input class="textbox" style="height: 30px;" type="email" name="email" required/><br/><br/>
+                    
+                    <label class="text" style="font-size: 4mm;">Password:</label><br/><br/>
+                    <input class="textbox" style="height: 30px;" type="password" name="pass1" required/><br/><br/>
+
+                    <label class="text" style="font-size: 4mm;">Confirm-Password:</label><br/><br/>
+                    <input class="textbox" style="height: 30px;" type="password" name="pass2" required/>
+
+                    <div style="padding-left: 160px; padding-top: 20px;">
+                        <input class="signup" type="submit" name="login" value="Sign Up"/>
+                    </div>
+                </form>
+            </div>
         </div>
+        <footer class="login">
+            <div style="padding-top: 20px;">
+                <p style="display: inline;"> Copyright 2020 Poll Maker</p>&nbsp; 
+                <a href="#">About us</a>   
+            </div>
+        </footer>
     </body>
 </html>
