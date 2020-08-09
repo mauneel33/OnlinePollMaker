@@ -6,7 +6,7 @@ function validate(){
     var pass = document.loginForm.pasw.value;
     if(usnm=="user1" && pass=="user10702")
     {
-        location.href="addpoll.html";
+        location.href="https://mauneel33.github.io/OnlinePollMaker/addpoll.html";
     }
     else{
             document.loginForm.usr.value = ""
