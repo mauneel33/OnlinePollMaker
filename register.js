@@ -46,5 +46,5 @@ function validate(){
         document.registerForm.pass2.focus();
         return;
     }
-    location.href = "login.html";
+    location.href = "https://mauneel33.github.io/OnlinePollMaker/login.html";
 }
