@@ -6,15 +6,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script src="register.js"></script>
     </head>
     <body class="login">
+        <header class="login">
+            <nav class="head-button">
+                <a class="linkButton" href="index.html">Home</a>&nbsp;
+                <a class="linkButton" id="backButton" href="" onclick="goback()">Back</a>&nbsp;
+            </nav>
+        </header>
         <div>
             <div class="login-title">
                 <label class="title">Poll Maker</label><br/><br/>
                 <label class="subtitle">Build your poll now!</label>
             </div>
             <div class="login-box" style="width: 450px; height: 440px;padding-top: 40px; padding-left: 30px;">
-                <form>
+                <form name="registerForm">
                     <table>
                         <tr>
                             <td align="left"><label class="text" style="font-size: 4mm;">First Name:</label></label></td>
@@ -26,16 +33,16 @@
                         </tr>
                     </table>
                     <label class="text" style="font-size: 4mm;">Email-ID:</label><br/><br/>
-                    <input class="textbox" style="height: 30px;" type="email" name="email" required/><br/><br/>
+                    <input class="textbox" style="height: 30px;font-size: 4mm;" type="email" name="email" required placeholder="eg. abc@abc.abc"/><br/><br/>
                     
                     <label class="text" style="font-size: 4mm;">Password:</label><br/><br/>
-                    <input class="textbox" style="height: 30px;" type="password" name="pass1" required/><br/><br/>
+                    <input class="textbox" style="height: 30px;font-size: 4mm;" type="password" name="pass1" required placeholder="Enter password of length 6 to 11 char"/><br/><br/>
 
                     <label class="text" style="font-size: 4mm;">Confirm-Password:</label><br/><br/>
-                    <input class="textbox" style="height: 30px;" type="password" name="pass2" required/>
+                    <input class="textbox" style="height: 30px;font-size: 4mm;" type="password" name="pass2" required/>
 
                     <div style="padding-left: 160px; padding-top: 20px;">
-                        <input class="signup" type="submit" name="login" value="Sign Up"/>
+                        <input class="signup" type="button" name="login" value="Sign Up" onclick="validate()"/>
                     </div>
                 </form>
             </div>

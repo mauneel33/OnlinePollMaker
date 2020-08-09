@@ -6,24 +6,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script src="login.js"></script>
     </head>
     <body class="login">
+        <header class="login">
+            <nav class="head-button">
+                <a class="linkButton" href="index.html">Home</a>&nbsp;
+                <a class="linkButton" id="backButton" href="" onclick="goback()">Back</a>&nbsp;
+            </nav>
+        </header>
         <div>
             <div class="login-title">
                 <label class="title">Poll Maker</label><br/><br/>
                 <label class="subtitle">Build your poll now!</label>
             </div>
             <div class="login-box">
-                <form>
+                <form name="loginForm">
                     <label class="text">Username :</label><br/><br/>
                     <input class="textbox" type="text" name="usr" required/><br/><br/>
-                    <label class="text">Password :</label> 
+                    <label class="text">Password :</label>
                     <a class="login" href="#">Forgot Password?</a><br/><br/>
                     <input class="textbox" type="password" name="pasw" required/><br/><br/><br/>
                     <div class="buttons">
                         <br/><br/><br/>
-                        <input class="submit" type="submit" name="login" value="Log in"/><br/><br/>
-                        &emsp;&nbsp;&emsp;<a href="OnlinePollMaker/register.html">Sign Up</a>
+                        <input class="submit" type="button" name="login" value="Log in" onclick="validate()"/><br/><br/>
+                        &emsp;&nbsp;&emsp;<a href="#">Sign Up</a>
                     </div>
                 </form>
             </div>
