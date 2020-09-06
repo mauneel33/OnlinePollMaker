@@ -157,3 +157,65 @@ textarea.addpoll:hover{
     border-color:green;
     border-radius: 5px;
 }
+
+.bg-green{
+    background-color: #00b300; 
+}
+
+.navbar-brand{
+    font-weight: bold;
+    font-family: Gabriola;
+    font-size: 35px
+}
+.navbar-dark .navbar-nav .nav-link{
+    font-weight: 500;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-item{
+    margin: 0 15px;
+}
+.row{
+    margin-top: 20px;
+}
+.footer-p{
+    font-weight: 200;
+    padding-top: 2%
+}
+.footer-showpolls{
+    margin-top: 20px;
+    height: 82px;
+}
+.bg-gray{
+    background-color: #E0E0E0;
+}
+.card-header{
+    text-align: center;
+}
+.poll-header{
+    font-size: 20px
+}
+.btn-outline-primary{
+    border-color: #00b300;
+    color: #00b300;
+}
+.option:hover{
+    background-color: #00b300;
+    border-color: white;
+    color: white;
+}
+.text-muted{
+    font-weight: 100;
+    font-size: 14px
+}
+.form-control:focus {
+  border-color: #00b300;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 255, 0, 0.6);
+}
+.txtarea:hover{
+    border-color: #00b300;
+}
+.field-label{
+    font-size: 17px;
+    font-weight: 550;
+}

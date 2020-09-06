@@ -5,53 +5,115 @@
         <title>Vote Now-Poll Maker</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!-- External Style Sheet -->
         <link rel="stylesheet" href="styles.css">
+
     </head>
+
     <body>
-        <header>
-            <h1>Polls are Live!</h1>
-        </header>
-        <nav>
-            <a href="https://mauneel33.github.io/OnlinePollMaker/index.html">Home</a>
-        </nav>
-        <br/>
-        <br/>
-        <form method="POST" action="#">
-            <table class="center">
-                <tr>1) What do you think, Earth is flat or circular?</tr>
-                <br/>
-                <br/>
-                <tr><input type="radio" name="ans" value="flat">Flat</tr>&nbsp;
-                <tr><input type="radio" name="ans" value="circular">Circular</tr>
-                <br/>
-                <br/>
-                <tr><input type="submit" name="vote_button" value="Vote"></tr>
-            </table>
-            <table class="center">
-                <tr>2)Which is yout favourite language?</tr>
-                <br/>
-                <br/>
-                <tr><input type="radio" name="ans" value="c">C</tr>&nbsp;
-                <tr><input type="radio" name="ans" value="java">JAVA</tr>&nbsp;
-                <tr><input type="radio" name="ans" value="python">PYTHON</tr>&nbsp;
-                <tr><input type="radio" name="ans" value="csharp">C#</tr>
-                <br/>
-                <br/>
-                <tr><input type="submit" name="vote_button" value="Vote"></tr>
-            </table>
-            <table class="center">
-                <tr>3) Do you use Public Transport?</tr>
-                <br/>
-                <br/>
-                <tr><input type="radio" name="ans" value="yes"> Yes</tr>&nbsp;
-                <tr><input type="radio" name="ans" value="no"> No</tr>
-                <br/>
-                <br/>
-                <tr><input type="submit" name="vote_button" value="Vote"></tr>
-            </table>
-        </form>
-        <footer>
-            <p>Poll Maker Copyright 2020 All rights reserved</p>
+                <!-- Nav bar Start -->
+                <nav class="navbar navbar-expand-md navbar-dark bg-green">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">Poll Maker</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="col-auto">
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                <a class="nav-link" href="/OnlinePollMaker/index.html">Home<span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="/OnlinePollMaker/addpoll.html">Add Poll</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Nav Bar End -->
+
+        <!-- Main Body starts -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                      <div class="card-header" >
+                        <p class="poll-header" style="display: inline">1) Earth is circular or flat? </p>
+                        
+                      </div>
+                      <div class="card-body">
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">Flat</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">Circular</button>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <span class="text-muted" style="float:right;">2 days ago</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                      <div class="card-header" >
+                        <p class="poll-header">2) Which is your favourite programmin language?</p>
+                        
+                      </div>
+                      <div class="card-body">
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">C#</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">C</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">JAVA</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">Python</button>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <span class="text-muted" style="float:right;">0 days ago</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="card">
+                      <div class="card-header" >
+                        <p class="poll-header">3) Which is your dream company?</p>
+                        
+                      </div>
+                      <div class="card-body">
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">Google</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">Amazon</button>
+                        <button type="button" class="btn btn-outline-primary btn-lg btn-block option">Microsoft</button>
+                      </div>
+                      <div class="card-footer text-muted">
+                        <span class="text-muted" style="float:right;">10 days ago</span>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+        <!-- Main Body ends -->
+
+        <!-- Footer Starts -->
+        <footer class="bg-gray footer-showpolls">
+            <p class="lead footer-p">Poll Maker Copyright 2020 All rights reserved</p>
         </footer>
+        <!-- Footer Ends -->
+
     </body>
 </html>
