@@ -2,42 +2,91 @@
 
 <html>
     <head>
-        <title>Your Name-Poll Maker</title>
+        <title>Profile-Poll Maker</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!-- External Style Sheet -->
         <link rel="stylesheet" href="styles.css">
+
     </head>
     <body>
-        <header>
-            <h1>Profile</h1>
-        </header>
-        <nav>
-            <a href="/index.html">Home</a>
+        <!-- Nav bar Start -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-green">
+            <div class="container">
+                <a class="navbar-brand" href="#">Poll Maker</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-auto">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="/OnlinePollMaker/index.html">Home<span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/OnlinePollMaker/showpolls.html">Add Polls</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/OnlinePollMaker/showpolls.html">Show Polls</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/OnlinePollMaker/showpolls.html">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
         </nav>
-        <br/>
-        <br/>
-        <div>
-            <table class="center" cellspacing="10">
-                <tr align="center">
-                    <td><img src="prof.png" alt="Your Profile Pic" width="50" height="50"><br/></td>
-                    <th>Statistics</th>
-                </tr>
-                <tr align="center">
-                    <td>Name : <label>Rakesh Sharma</label><br/></td>
-                    <td>Total polls generated : <label>6</label></td>
-                </tr>
-                <tr align="center">
-                    <td>Email-id : <label>rksh@gmail.com</label><br/></td>
-                    <td>Total votes gained : <label>100</label></td>
-                </tr>
-                <tr align="center">
-                    <td></td>
-                    <td>Average Votes per poll : <label>16</label></td>
-                </tr>
-            </table>
+        <!-- Nav Bar End -->
+
+        <!-- Main Body starts -->
+        <div class="jumbotron">
+            <div class="card w-50 profile-card" style="width: 18rem;">
+                <div class="card-body">
+                    <div class="profile-cbody1">
+                        <img class="profile-img" src="prof.png" alt="Profile Image"/>
+                        <br/><br/>
+                        <table class="profile-stats" cellspacing="15">
+                            <tr>
+                                <td class="profile-col"><p class="profile-statno">100</p></td>
+                                <td class="profile-col"><p class="profile-statno">200</p></td>
+                            </tr>
+                            <tr>
+                                <td class="profile-col"><p class="profile-stathead lead">Polls</p></td>
+                                <td class="profile-col"><p class="profile-stathead lead">Votes</p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="profile-cbody2">
+                        <p class="card-text lead profile-dethead">Name</p>
+                        <p class="card-text profile-details">Rakesh Sharma</p>
+                        <br/>
+                        <p class="card-text lead profile-dethead">Email-ID</p>
+                        <p class="card-text profile-details">rksh@gmail.com</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer>
-            <p>Poll Maker Copyright 2020 All rights reserved</p>
+        
+        <!-- Main Body ends -->
+        
+        <!-- Footer Starts -->
+        <footer class="bg-gray footer-showpolls">
+            <p class="lead footer-p">Poll Maker Copyright 2020 All rights reserved</p>
         </footer>
+        <!-- Footer Ends -->
+
     </body>
 </html>
