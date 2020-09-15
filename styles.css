@@ -302,3 +302,9 @@ textarea.addpoll:hover{
     font-size: 1.3rem;
     font-weight: 500;
 }
+#showpolls-modalhead{
+    background-color: #00b300;
+}
+#exampleModalLabel{
+    color: white;
+}

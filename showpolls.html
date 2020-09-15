@@ -20,6 +20,9 @@
         <!-- External Style Sheet -->
         <link rel="stylesheet" href="styles.css">
 
+        <!-- External Jquery -->
+        <script src="jquery.js"></script>
+
     </head>
 
     <body>
@@ -36,9 +39,6 @@
                               <li class="nav-item">
                                 <a class="nav-link" href="/OnlinePollMaker/index.html">Home<span class="sr-only">(current)</span></a>
                               </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="/OnlinePollMaker/addpoll.html">Add Poll</a>
-                              </li>
                             </ul>
                           </div>
                         </div>
@@ -47,13 +47,50 @@
                 <!-- Nav Bar End -->
 
         <!-- Main Body starts -->
-        <div class="container">
+        <div class="container" id="maincont">
             <div class="row">
-                <div class="col-md-2"></div>
+                <div class="col-md-2">
+
+                  <!-- Modal start -->
+                  <button type="button" class="btn btn-md" id="aboutus-btn" data-toggle="modal" onclick="clearModal()" data-target="#exampleModal">Add Poll</button>
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header" id="showpolls-modalhead">
+                          <h5 class="modal-title" id="exampleModalLabel">Add Poll:</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                            <div class="form-group">
+                              <label for="question" class="col-form-label">Your Question:</label>
+                              <textarea class="form-control txtarea" rows="5" cols="80" id="question" placeholder="Enter your question here."></textarea>
+                              <small id="emailHelp" class="form-text text-muted">No Inappropriate Question</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="options" class="col-form-label">Your Options:</label>
+                              <textarea class="form-control txtarea" rows="3" cols="20" id="options" placeholder="Write comma separated values. eg('Mercury,Venus,Earth')"></textarea>
+                              <small id="emailHelp" class="form-text text-muted">Maximum 4 options and Minimum 2 options are allowed</small>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-mg" id="aboutus-btn" onclick="addpoll()">Add</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Modal Ends -->
+
+                </div>
                 <div class="col-md-8">
                     <div class="card">
                       <div class="card-header" >
-                        <p class="poll-header" style="display: inline">1) Earth is circular or flat? </p>
+                        <p class="poll-header" style="display: inline">Earth is circular or flat? </p>
                         
                       </div>
                       <div class="card-body">
@@ -72,7 +109,7 @@
                 <div class="col-md-8">
                     <div class="card">
                       <div class="card-header" >
-                        <p class="poll-header">2) Which is your favourite programmin language?</p>
+                        <p class="poll-header">Which is your favourite programmin language?</p>
                         
                       </div>
                       <div class="card-body">
@@ -93,7 +130,7 @@
                 <div class="col-md-8">
                     <div class="card">
                       <div class="card-header" >
-                        <p class="poll-header">3) Which is your dream company?</p>
+                        <p class="poll-header">Which is your dream company?</p>
                         
                       </div>
                       <div class="card-body">
